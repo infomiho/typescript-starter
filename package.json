@@ -1,20 +1,24 @@
 {
-  "name": "funnygpt",
+  "name": "my-project",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node -r dotenv/config dist/index.js",
-    "dev": "npm run build && npm run start"
+    "start": "tsc --noEmit && ts-node -r dotenv/config ./src/index.ts",
+    "dev": "nodemon ./src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@swc/core": "^1.3.52",
+    "@swc/helpers": "^0.5.0",
     "@tsconfig/node18": "^1.0.1",
-    "@types/node": "^18.15.3",
+    "@types/node": "^18.15.12",
+    "nodemon": "^2.0.22",
+    "regenerator-runtime": "^0.13.11",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   },
   "dependencies": {
