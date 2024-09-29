@@ -3,10 +3,9 @@
 Use this starter to create a new Typescript project.
 
 It uses:
+
 - Typescript 5
-- SWC for compiling
-- `ts-node` for running
-- `nodemon` for watching and restarting
+- `tsx` for watching and compiling
 
 Run the following commands to get started:
 
@@ -17,7 +16,7 @@ npm install
 ```
 
 ## Running in dev
-    
+
 ```bash
 npm run dev
 ```
