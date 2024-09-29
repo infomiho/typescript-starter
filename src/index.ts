@@ -1,1 +1,3 @@
-console.log("Hello World " + process.env.VARIABLE);
+import { hello } from './hello.js';
+
+console.log(hello(process.env.VARIABLE ?? 'world'));

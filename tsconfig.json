@@ -1,14 +1,17 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es2017",
+    // https://www.totaltypescript.com/tsconfig-cheat-sheet
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "module": "NodeNext",
     "outDir": "dist",
-    "rootDir": "src",
-  },
-  "ts-node": {
-    "esm": true,
-    "swc": true,
+    "sourceMap": true
   },
   "include": ["src"]
 }
